@@ -1,0 +1,1 @@
+The **Vietnamese traffic signs detection and recognition dataset** contains 1,170 images resolution of 1622x626 pixels. There are 29 types of signs categorized by the meanings and shapes of the signs which are divided into 29 classes including the additional classes for signs that aren’t identified.
