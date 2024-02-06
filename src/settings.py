@@ -13,8 +13,8 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "vietnamese traffic signs"
-PROJECT_NAME_FULL: str = "Vietnamese traffic signs detection and recognition dataset"
+PROJECT_NAME: str = "Vietnamese Traffic Signs"
+PROJECT_NAME_FULL: str = "Vietnamese Traffic Signs Detection and Recognition Dataset"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
@@ -50,7 +50,37 @@ DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = (
 )
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
-CLASS2COLOR: Optional[Dict[str, List[str]]] = None
+CLASS2COLOR: Optional[Dict[str, List[str]]] = {
+    "one way prohibition": [230, 25, 75],
+    "no parking": [60, 180, 75],
+    "no stopping and parking": [255, 225, 25],
+    "no turn left": [0, 130, 200],
+    "no turn right": [245, 130, 48],
+    "no u turn": [145, 30, 180],
+    "no u and left turn": [70, 240, 240],
+    "no u and right turn": [240, 50, 230],
+    "no motorbike entry/turning": [210, 245, 60],
+    "no car entry/turning": [250, 190, 212],
+    "no truck entry/turning": [0, 128, 128],
+    "other prohibition": [220, 190, 255],
+    "indication": [170, 110, 40],
+    "direction": [255, 250, 200],
+    "speed limit": [128, 0, 0],
+    "weight limit": [170, 255, 195],
+    "height limit": [128, 128, 0],
+    "pedestrian crossing": [255, 215, 180],
+    "intersection danger": [0, 0, 128],
+    "road danger": [128, 128, 128],
+    "pedestrian danger": [230, 25, 75],
+    "construction danger": [60, 180, 75],
+    "slow warning": [255, 225, 25],
+    "other warning": [0, 130, 200],
+    "vehicle permission lane": [245, 130, 48],
+    "vehicle and speed permission lane": [145, 30, 180],
+    "overpass route": [70, 240, 240],
+    "no more prohibition": [240, 50, 230],
+    "other": [210, 245, 60],
+}
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
