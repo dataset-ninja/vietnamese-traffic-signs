@@ -1,3 +1,3 @@
-# Vietnamese traffic signs detection and recognition dataset
+# Vietnamese Traffic Signs Detection and Recognition Dataset
 
-vietnamese traffic signs is a dataset for object detection task.
+Vietnamese Traffic Signs is a dataset for object detection task.
